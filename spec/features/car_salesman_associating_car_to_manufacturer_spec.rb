@@ -22,6 +22,7 @@ So that I can keep track of its manufacturer } do
       click_on 'Create Car'
       expect(page).to have_content('Car Information Created')
       expect(current_path).to eq cars_path
+      expect(Car.first.manufacturer.name).to eq('Toyota')
     end
 
   end
