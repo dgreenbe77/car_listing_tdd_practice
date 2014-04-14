@@ -1,0 +1,27 @@
+<%= simple_form_for(@car) do |c| %>
+
+  <div>
+    <%= c.input :color %>
+  </div>
+
+  <div>
+    <%= c.input :year %>
+  </div>
+
+  <div>
+    <%= c.input :mileage %>
+  </div>
+
+  <div>
+    <%= c.input :description %>
+  </div>
+
+  <div>
+    <%= c.association :manufacturer, prompt: "Choose a Manufacturer" %>
+  </div>
+
+  <div>
+    <%= c.button :submit %>
+  </div>
+
+<% end %>

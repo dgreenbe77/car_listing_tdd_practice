@@ -1,0 +1,17 @@
+<%= form_for(@manufacturer) do |m| %>
+
+  <div>
+    <%= m.label :name %>
+    <%= m.text_field :name %>
+  </div>
+
+  <div>
+    <%= m.label :country %>
+    <%= m.text_field :country %>
+  </div>
+
+  <div>
+    <%= m.button :submit %>
+  </div>
+
+<% end %>
